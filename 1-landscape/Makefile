@@ -13,5 +13,5 @@ $(EXECUTABLE): $(OBJECTS)
 .cpp.o:
 	$(CC) $(CFLAGS) $< -o $@
 
-run:
+run: all
 	chmod +x $(EXECUTABLE) && ./$(EXECUTABLE)
