@@ -1,4 +1,5 @@
 #include <GL/glut.h>
+#include "../common/app.h"
 
 void display()
 {
@@ -17,6 +18,9 @@ void reshape(GLsizei w, GLsizei h)
 int main(int argc, char** argv)
 {
   glutInit(&argc, argv);
+
+  App app;
+  app.hello();
 
   glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
   glutInitWindowSize(800, 600);
